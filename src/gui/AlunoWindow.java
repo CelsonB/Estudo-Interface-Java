@@ -62,8 +62,10 @@ public class AlunoWindow extends JFrame {
 	private CursoService cursoService;
 	private AlunoService alunoService;
 	public JComboBox cbCurso = new JComboBox();
+	
 	private final Action action = new SwingAction();
 	private JSpinner periodo;
+	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -139,11 +141,6 @@ public class AlunoWindow extends JFrame {
 		menuBar.add(AjudaMenu);
 		
 		JMenuItem mntmNewMenuItem_1 = new JMenuItem("Sobre");
-		mntmNewMenuItem_1.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				abrirJanelaSobre();
-			}
-		});
 		AjudaMenu.add(mntmNewMenuItem_1);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
